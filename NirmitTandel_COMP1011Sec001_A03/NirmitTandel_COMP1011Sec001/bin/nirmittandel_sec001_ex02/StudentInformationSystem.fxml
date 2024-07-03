@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+	<Label alignment="CENTER" prefHeight="30.0" prefWidth="800.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Student Information System" />
+	<TextField fx:id="firstNameField" layoutX="123.0" layoutY="48.0" prefHeight="25.0" prefWidth="200.0" />
+	<Label layoutX="24.0" layoutY="52.0" text="First Name:" />
+	<Label layoutX="24.0" layoutY="88.0" text="Address:" />
+	<TextField fx:id="addressField" layoutX="123.0" layoutY="87.0" prefHeight="25.0" prefWidth="200.0" />
+	<Label layoutX="24.0" layoutY="128.0" text="Province:" />
+	<TextField fx:id="provinceField" layoutX="123.0" layoutY="124.0" prefHeight="25.0" prefWidth="200.0" />
+	<Label layoutX="25.0" layoutY="162.0" text="City:" />
+	<TextField fx:id="cityField" layoutX="123.0" layoutY="158.0" prefHeight="25.0" prefWidth="200.0" />
+	<Label layoutX="23.0" layoutY="200.0" text="Phone Number:" />
+	<TextField fx:id="phoneNumberField" layoutX="123.0" layoutY="196.0" prefHeight="25.0" prefWidth="200.0" promptText="e.g. 249-989-3308" />
+	<Label layoutX="21.0" layoutY="238.0" text="Postal Code:" />
+	<TextField fx:id="postalCodeField" layoutX="123.0" layoutY="234.0" prefHeight="25.0" prefWidth="200.0" promptText="e.g. L4M 5S3" />
+	<Label layoutX="22.0" layoutY="282.0" text="Email ID:" />
+	<Label layoutX="369.0" layoutY="44.0" text="Activities Opted:" />
+	<TextField fx:id="emailField" layoutX="123.0" layoutY="278.0" prefHeight="25.0" prefWidth="200.0" promptText="e.g. nirmittandel@example.com" />
+	<CheckBox fx:id="basketballCheckbox" layoutX="389.0" layoutY="80.0" text="Basketball" />
+	<CheckBox fx:id="volleyballCheckbox" layoutX="389.0" layoutY="106.0" text="Volleyball" />
+	<CheckBox fx:id="studentCouncilCheckbox" layoutX="389.0" layoutY="131.0" text="Student Council" />
+	<CheckBox fx:id="footballCheckbox" layoutX="389.0" layoutY="157.0" text="Football" />
+	<CheckBox fx:id="volunteerWorkCheckbox" layoutX="390.0" layoutY="183.0" text="Volunteer Work" />
+	<CheckBox fx:id="swimmingCheckbox" layoutX="390.0" layoutY="208.0" text="Swimming" />
+	<Label layoutX="547.0" layoutY="65.0" text="Student's Major:" />
+	<Label layoutX="534.0" layoutY="226.0" text="Select Subjects:" />
+	<ComboBox fx:id="subjectsComboBox" layoutX="526.0" layoutY="265.0" prefWidth="200.0" />
+	<Button layoutX="189.0" layoutY="316.0" onAction="#displayInfo" prefHeight="42.0" prefWidth="134.0" text="Display" />
+	<TextArea fx:id="outputTextArea" editable="false" layoutX="10.0" layoutY="399.0" prefHeight="187.0" prefWidth="780.0" />
+   <RadioButton fx:id="Computer" layoutX="547.0" layoutY="106.0" mnemonicParsing="false" text="Computer Science" />
+   <RadioButton fx:id="Business" layoutX="547.0" layoutY="137.0" mnemonicParsing="false" text="Business Analyst" />
+</AnchorPane>
